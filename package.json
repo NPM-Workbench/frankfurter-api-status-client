@@ -1,6 +1,6 @@
 {
   "name": "frankfurter-api-status-client",
-  "description": "A lightweight typescript support NPM package that provides real-time information for the Frankfurter Dev API. This package is ideal for developers integrating the Frankfurter API into their applications and need to monitor its status with ease.",
+  "description": "A lightweight TypeScript client for monitoring the public status of the Frankfurter API.",
   "type": "module",
   "version": "0.1.0-beta.1",
   "main": "./dist/index.js",
@@ -44,5 +44,9 @@
   "homepage": "https://github.com/NPM-Workbench/frankfurter-api-status-client",
   "bugs": {
     "url": "https://github.com/NPM-Workbench/frankfurter-api-status-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NPM-Workbench/frankfurter-api-status-client"
   }
 }

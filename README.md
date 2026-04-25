@@ -86,13 +86,13 @@ await myFunc();
 ```
 PASS src/get-summary/tests/get-summary.test.ts
   Get API Summary
-    ✓ returns 200-OK response w. summary
-    ✓ returns 500-ISE response no summary
+    ✓ returns 200-OK response w. summary (49 ms)
+    ✓ returns 500-ISE response no summary (9 ms)
 
 PASS src/get-components/tests/get-components.test.ts
   Get API Components
-    ✓ returns 200-OK response w. components
-    ✓ returns 500-ISE response no components
+    ✓ returns 200-OK response w. components (32 ms)
+    ✓ returns 500-ISE response no components (7 ms)
 
 Test Suites: 2 passed, 2 total
 Tests:       4 passed, 4 total
@@ -103,13 +103,13 @@ Snapshots:   0 total
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |     100 |      100 |     100 |     100 |
- get-components             |     100 |      100 |     100 |     100 |
-  index.ts                  |     100 |      100 |     100 |     100 |
+All files                   |   95.16 |     90.9 |     100 |   95.16 |
+ get-components             |      90 |     87.5 |     100 |      90 |
+  index.ts                  |      90 |     87.5 |     100 |      90 | 24-26
  get-components/tests       |     100 |      100 |     100 |     100 |
   msw-handlers.ts           |     100 |      100 |     100 |     100 |
- get-summary                |     100 |      100 |     100 |     100 |
-  index.ts                  |     100 |      100 |     100 |     100 |
+ get-summary                |   89.65 |    88.88 |     100 |   89.65 |
+  index.ts                  |   89.65 |    88.88 |     100 |   89.65 | 23-25
  get-summary/tests          |     100 |      100 |     100 |     100 |
   msw-handlers.ts           |     100 |      100 |     100 |     100 |
  shared                     |     100 |      100 |     100 |     100 |

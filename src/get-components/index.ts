@@ -9,17 +9,21 @@ type TOutput = TAPIResponse & {
 
 /* module */
 async function getAPIComponents(): Promise<TOutput> {
-  /* fetch */
-  const API_URL = `${API_ROOT}/v3/components.json`;
-  const response = await fetch(API_URL);
+  try {
+    /* fetch */
+    const API_URL = `${API_ROOT}/v3/components.json`;
+    const response = await fetch(API_URL);
 
-  /* end */
-  const data = await response.json();
-  const code = !(response.ok) ? "api-fail" : "api-ok";
-  const message = !(response.ok) ? "[Fail]: Could Not Get API-Component Status" : "No Errors. Check Components Info.";
-  const components = !(response.ok) ? null : data.components;
+    /* end */
+    const code = !(response.ok) ? "api-fail" : "api-ok";
+    const message = !(response.ok) ? "[Fail]: Could Not Get API-Component Status" : "No Errors. Check Components Info.";
+    const components = !(response.ok) ? null : (await response.json()).components;
 
-  return { code, message, components };
+    return { code, message, components };
+  } catch (error) {
+    console.error("[Frankfurter]: Get API Components Err - ", error);
+    return {code: "api-fail", message: "[Fail]: Could Not Get API-Component Status", components: null};
+  }
 }
 
 /* exports */
