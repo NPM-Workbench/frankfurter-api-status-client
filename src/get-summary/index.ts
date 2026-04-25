@@ -19,7 +19,7 @@ async function getAPISummary(): Promise<TOutput> {
     return {code: "api-ok", message: "No Errors. Check Summary.", summary};
   } catch (error) {
     console.error(error);
-    return {code: "api-fail", message: "[Fail]: Could Not Get API Status", summary: null}
+    return {code: "api-fail", message: "[Fail]: Could Not Get API-Summary Status", summary: null}
   }
 }
 
