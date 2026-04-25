@@ -22,6 +22,8 @@ npm install frankfurter-api-status-client
 1. TypeScript-first with exported type definitions
 2. Lightweight wrapper around Frankfurter public status endpoints
 3. Simple promise-based API for summary and component health checks
+4. Zero runtime configuration required
+5. Works in both Node.js environments with `fetch` support and modern browsers
 
 ### 🔤 Example Usage
 
@@ -77,6 +79,43 @@ await myFunc();
   ]
 }
 */
+```
+
+### 📗 Test Coverage
+
+```
+PASS src/get-summary/tests/get-summary.test.ts
+  Get API Summary
+    ✓ returns 200-OK response w. summary
+    ✓ returns 500-ISE response no summary
+
+PASS src/get-components/tests/get-components.test.ts
+  Get API Components
+    ✓ returns 200-OK response w. components
+    ✓ returns 500-ISE response no components
+
+Test Suites: 2 passed, 2 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+```
+
+```
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |     100 |      100 |     100 |     100 |
+ get-components             |     100 |      100 |     100 |     100 |
+  index.ts                  |     100 |      100 |     100 |     100 |
+ get-components/tests       |     100 |      100 |     100 |     100 |
+  msw-handlers.ts           |     100 |      100 |     100 |     100 |
+ get-summary                |     100 |      100 |     100 |     100 |
+  index.ts                  |     100 |      100 |     100 |     100 |
+ get-summary/tests          |     100 |      100 |     100 |     100 |
+  msw-handlers.ts           |     100 |      100 |     100 |     100 |
+ shared                     |     100 |      100 |     100 |     100 |
+  create-msw-mock-server.ts |     100 |      100 |     100 |     100 |
+  index.ts                  |     100 |      100 |     100 |     100 |
+----------------------------|---------|----------|---------|---------|-------------------
 ```
 
 ### 📘 Contributing
