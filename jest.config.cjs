@@ -1,14 +1,18 @@
 module.exports = {
   preset: 'ts-jest/presets/js-with-ts-esm',
-  testEnvironment: 'jsdom',
+  testEnvironment: 'node',
+  extensionsToTreatAsEsm: ['.ts'],
   roots: ['<rootDir>/src'],
   testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   transform: {
-    '^.+\\.ts$': ['ts-jest', { useESM: true }]
+    '^.+\\.[tj]s$': ['ts-jest', { useESM: true }],
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!(msw|@mswjs|until-async)/)',
+  ],
   coverageDirectory: 'coverage',
   collectCoverageFrom: [
     'src/**/*.ts',

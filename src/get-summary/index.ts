@@ -9,18 +9,15 @@ type TOutput = TAPIResponse & {
 
 /* module */
 async function getAPISummary(): Promise<TOutput> {
-  try {
-    /* fetch */
-    const API_URL = `${API_ROOT}/v3/summary.json`;
-    const response = await fetch(API_URL);
+  /* fetch */
+  const API_URL = `${API_ROOT}/v3/summary.json`;
+  const response = await fetch(API_URL);
 
-    /* end */
-    const summary = await response.json();
-    return {code: "api-ok", message: "No Errors. Check Summary.", summary};
-  } catch (error) {
-    console.error(error);
-    return {code: "api-fail", message: "[Fail]: Could Not Get API-Summary Status", summary: null}
-  }
+  /* end */
+  const code = !(response.ok) ? "api-fail" : "api-ok";
+  const message = !(response.ok) ? "[Fail]: Could Not Get API-Summary Status" : "No Errors. Check Summary.";
+  const summary = !(response.ok) ? null : await response.json();
+  return { code, message, summary };
 }
 
 /* exports */
