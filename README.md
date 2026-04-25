@@ -1,9 +1,4 @@
 ![banner](https://github.com/user-attachments/assets/4a717541-bf2a-4674-bdb6-d2e699497000)
-![npm](https://img.shields.io/npm/v/frankfurter-api-status-client)
-![downloads](https://img.shields.io/npm/dw/frankfurter-api-status-client)
-![license](https://img.shields.io/npm/l/frankfurter-api-status-client)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/frankfurter-api-status-client)
-
 # frankfurter-api-status-client
 
 A lightweight, type-safe JavaScript/TypeScript client for the <b>Frankfurter API Status Page</b>, designed for developers who want a minimal way to check service health and inspect public status information. This package wraps the Frankfurter status endpoints with a small promise-based API and predictable success/failure responses.
