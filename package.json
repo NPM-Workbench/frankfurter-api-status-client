@@ -1,0 +1,45 @@
+{
+  "name": "frankfurter-api-status-client",
+  "description": "A lightweight typescript support NPM package that provides real-time information for the Frankfurter Dev API. This package is ideal for developers integrating the Frankfurter API into their applications and need to monitor its status with ease.",
+  "type": "module",
+  "version": "0.1.0-beta.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --verbose"
+  },
+  "keywords": [
+    "frankfurter-api",
+    "frankfurter-api-status",
+    "frankfurter-api-monitoring",
+    "frankfurter-monitoring",
+    "frankfurter-status",
+    "frankfurter-status-check",
+    "frankfurter-health",
+    "frankfurter-api-health",
+    "frankfurter-api-health-status"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  },
+  "homepage": "https://github.com/NPM-Workbench/frankfurter-api-status-client",
+  "bugs": {
+    "url": "https://github.com/NPM-Workbench/frankfurter-api-status-client/issues"
+  }
+}
