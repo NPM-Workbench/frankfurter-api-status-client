@@ -1,0 +1,5 @@
+![banner](https://github.com/user-attachments/assets/4a717541-bf2a-4674-bdb6-d2e699497000)
+![npm](https://img.shields.io/npm/v/frankfurter-api-status-client)
+![downloads](https://img.shields.io/npm/dw/frankfurter-api-status-client)
+![license](https://img.shields.io/npm/l/frankfurter-api-status-client)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/frankfurter-api-status-client)
