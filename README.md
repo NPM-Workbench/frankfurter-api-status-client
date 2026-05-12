@@ -117,11 +117,14 @@ All files                   |   95.16 |     90.9 |     100 |   95.16 |
 ----------------------------|---------|----------|---------|---------|-------------------
 ```
 
-### 📘 Contributing
+### 🗂 Related NPM Packages
+1. Frankfurter API Client: V1: https://www.npmjs.com/package/frankfurter-api-client
+2. Frankfurter API Client: V2: https://www.npmjs.com/package/frankfurter-api-client-v2
+3. Frankfurter API Status Client: https://www.npmjs.com/package/frankfurter-api-status-client
 
+### 📘 Contributing
 Contributions, suggestions, and improvements are welcome.<br/>
 Feel free to open issues or pull requests.
 
 ### ❤️ Support
-
 Like this project? Support it with a github star, it would mean a lot to me! Cheers and Happy Coding.
