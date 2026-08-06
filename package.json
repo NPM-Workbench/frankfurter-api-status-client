@@ -2,7 +2,7 @@
   "name": "frankfurter-api-status-client",
   "description": "A lightweight TypeScript client for monitoring the public status of the Frankfurter API.",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
